@@ -164,6 +164,7 @@ const els = {
   ok: $('ok'),
   ctxMenu: $('ctx-menu'),
   ctxDelete: $('ctx-delete'),
+  historyBtn: $('history-btn'),
 };
 
 const finishOpen = () => els.finishModal.classList.contains('show');
@@ -350,6 +351,7 @@ document.addEventListener('pointercancel', () => {
 els.scrim.addEventListener('click', closeDrawer);
 els.closeDrawer.addEventListener('click', closeDrawer);
 els.edgeHint.addEventListener('click', () => { if (!drawerOpen) openDrawer(); });
+els.historyBtn.addEventListener('click', () => { if (!drawerOpen) openDrawer(); });
 els.backBtn.addEventListener('click', showListView);
 
 /* ================= session context menu (delete) ================= */

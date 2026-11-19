@@ -24,9 +24,27 @@ body {
   padding-top: calc(env(safe-area-inset-top, 0px) + 8px);
 }
 
+#history-btn {
+  align-self: flex-start;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin: 0 0 0 4px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+}
+#history-btn:active { opacity: 0.6; }
+#history-btn svg { width: 26px; height: 26px; flex: none; display: block; }
+
 .total-wrap {
   text-align: center;
-  padding: 4vh 16px 3vh;
+  padding: 2vh 16px 3vh;
 }
 
 .total {

@@ -5,9 +5,10 @@ A deliberately simple cash-counting app: a black screen with the seven euro bank
 note to remove one (counts never go below zero). Your running session survives app
 restarts; tapping **Finish** (bottom-right) shows the breakdown and, after **Ok**,
 archives the session to an on-device encrypted history and starts a fresh session.
-**Swipe from the left edge** (or tap the thin handle) for session history; tap a
-session to see its numerical breakdown. **Long-press (or right-click)** a session
-in the list and choose **Delete** to remove it.
+Open session history via the **clock-history button (top-left)**, by **swiping
+from the left edge**, or via the thin edge handle. Tap a session to see its
+numerical breakdown. **Long-press (or right-click)** a session in the list and
+choose **Delete** to remove it.
 
 It's a PWA (Progressive Web App) — the "modern equivalent" of an APK: installable
 from the browser, launches full-screen from your home screen, and works fully offline.

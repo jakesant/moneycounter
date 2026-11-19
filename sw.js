@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE = 'mc-v2';
+const CACHE = 'mc-v3';
 const ASSETS = [
   './',
   './index.html',
