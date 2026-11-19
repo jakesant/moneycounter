@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Tap euro banknotes to count cash.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Money Counter">
+  <title>Money Counter</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main id="main">
+    <header class="total-wrap">
+      <div id="total" class="total">€0</div>
+      <div id="session-info" class="session-info"></div>
+    </header>
+
+    <section id="notes" class="notes" aria-label="Euro banknotes"></section>
+
+    <button id="finish" class="finish" type="button">Finish</button>
+  </main>
+
+  <button id="edge-hint" type="button" aria-label="Open session history"></button>
+
+  <div id="scrim"></div>
+
+  <aside id="drawer" aria-label="Session history">
+    <div id="view-list" class="drawer-view">
+      <div class="drawer-head">
+        <h2>History</h2>
+        <button id="close-drawer" class="icon-btn" type="button" aria-label="Close history">✕</button>
+      </div>
+      <ul id="history-list"></ul>
+    </div>
+    <div id="view-detail" class="drawer-view" style="display:none">
+      <div class="drawer-head">
+        <button id="back-btn" class="icon-btn" type="button" aria-label="Back to history">←</button>
+        <h2 id="detail-title">Session</h2>
+        <span class="spacer"></span>
+      </div>
+      <div id="session-detail" class="detail"></div>
+    </div>
+  </aside>
+
+  <div id="finish-modal">
+    <div class="panel">
+      <button id="finish-close" class="icon-btn" type="button" aria-label="Cancel">✕</button>
+      <h2>Session breakdown</h2>
+      <div id="finish-rows" class="detail"></div>
+      <div class="grand-total">
+        <span>Total</span>
+        <span id="finish-total">€0</span>
+      </div>
+      <button id="ok" class="ok" type="button">Ok</button>
+    </div>
+  </div>
+
+  <div id="ctx-menu">
+    <button id="ctx-delete" type="button">Delete</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
